@@ -6,7 +6,9 @@ import {viteSingleFile} from 'vite-plugin-singlefile';
 
 export default defineConfig(() => {
   return {
-    plugins: [react(), tailwindcss(), viteSingleFile()],
+  base: '/Andi-Suherman/',
+
+  plugins: [react(), tailwindcss(), viteSingleFile()]
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
